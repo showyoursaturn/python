@@ -1,12 +1,34 @@
-print("hello world")
 print(5)
 print(-10)
 print(3.14)
 print(10000)
+#연산자
 print(4+7)
 print(4*8)
 print(3*(3+4))
-print('풍선')
+#문자열
+print('hello world')
 print("고릴라")
 print("ㅋ")
 print("ㅋ"*8)
+#boolean
+print(5>10)
+print(True)
+print(not True)
+print(not(5<2))
+
+#애완동물을 소개해 주세요! - 변수; 맨 앞에 선언할 수도 있지만 중간에도 표현 가능
+#+말고 , 로도 출력할 수 있음; 차이는 str 선언유무, ,넣을 시 띄어쓰기 한 칸 자동 포함
+animal = "강아지"
+name = "복슬강아지"
+age = 4
+hobby = "산책"
+is_adult = age >= 3
+
+print("우리집" + animal + "는 " + name)
+print("예쁘지는 않지만 사랑스러워")
+print(name + "은/는 " +  str(age) + "살이에요." + hobby + "를 아주 좋아해요")
+print(name + "은/는 어른일까요 ? " + str(is_adult))
+
+#주석 : 코드에는 포함이 되어 있으나 실제로는 실행이 안되는 것 (무시) ; # 혹은 ctrl + /
+#여러문장 주석 : ''' 다시 닫을 때도 ''' (ctrl + /는 선택하고 다시 누르면 해제됨)
