@@ -1,0 +1,31 @@
+#사칙연산
+print(1+1)
+print(3-2)
+print(5*2)
+print(5/5)
+
+#몫,제곱,나머지
+print(2**3) #**는 제곱
+print(5%3) #%는 나머지
+print(5//3) #//는 몫
+
+#부등호
+print(5>3)
+print(5<=5)
+print(5>=8)
+print(5<7)
+
+#동일값 구하기 '=='
+print(3 ==3)
+print(3+4 == 7)
+
+#동일하지 않은 값 구하기 '!='
+print(3!=2)
+print(not(1 != 3))
+
+#두 개 이상의 값 boolean and,& / or,|
+print((3>0) and (5<9))
+print((3<5)&(5>1))
+
+print((3>0) or (5<12))
+print((4>1)|(6>3>1)) #연속된 비교도 가능함
