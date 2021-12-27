@@ -1,0 +1,22 @@
+index = "http://naver.com"
+
+index = index[7:]
+print(index)
+index = index[:5]
+print(index)
+
+print(index[:3]+str(len(index))+str(index.count("e"))+"!")
+#본인 거는 naver 혹은 5글자의 사이트만 가능함.
+
+#고수 풀이
+url = "http://youtube.com"
+my_str = url.replace("http://","") #규칙1
+print(my_str)
+my_str = my_str[:my_str.index(".")] #my_str[0:5]
+print(my_str) #규칙2
+
+password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+print("{0}의 비밀번호는 {1}입니다.".format(url, password))
+
+
+
