@@ -1,0 +1,91 @@
+#문자열
+sentence = '나는 소년입니다'
+print(sentence)
+sentence2 = "파이썬은 쉬워요"
+print(sentence2)
+sentence3 = """
+나는 소년이고,
+파이썬은 쉬워요
+"""
+print(sentence3)
+
+#슬라이싱
+address = "990120-1234567"
+
+print("성별 : " + address[7]) #컴퓨터는 인덱스넘버를 0부터 계산
+print("출생년도 : " + address[0:2]) #N:M일 때 N부터 M직전까지 (0부터 1까지)
+print("출생월 : " + address[2:4])
+print("출생일 : " + address[4:6])
+print("생년월일 : " + address[:6]) #:로 시작하면 처음부터 뒷 수 직전까지 슬라이싱
+print("뒤 7자리 : " + address[7:]) #:뒷 수를 입력하지 않으면 끝까지로 슬라이싱
+print("뒤 7자리 (뒤에서부터) : " + address[-7:])
+#맨 뒤에서 7번째까지 (-1부터 시작)
+
+#문자열 처리함수
+python = "Python is Amazing"
+print(python.lower())
+print(python.upper())
+print(python[0].isupper())
+print(len(python))
+print(python.replace("Python","Java"))
+
+#문자의 위치 구하기
+index = python.index("n")
+print(index)
+index = python.index("n", index +1) #앞에서 계산한 값 뒤부터 찾기
+print(index)
+
+print(python.find("java")) #-1 : 원하는 값이 포함되어있지 않은 경우 반환
+#find에서는 원하는 값이 없을 경우에는 -1 반환
+#print(python.index("java")) 의 경우에는 오류로 제공 (뒤에 참인 함수가 오더라도 오류에서 종료)
+print(python.count("n"))
+
+#문자열포맷
+print("a" + "b")
+print("a", "b") #이것 말고도 다양한 방법O
+
+#방법1
+print("나는 %d살입니다." % 20) #d에는 정수값만 대치 가능
+print("나는 %s을/를 좋아해요." %"Python") #s는 문자열
+print("Apple 은 %c로 시작해요." %"A") #c는 character = 문자 하나
+#%s는 문자열이나 숫자 모두 가능
+print("나는 %s색과 %s색을 좋아해요." % ("파랑", "빨강"))
+
+#방법2
+print("나는 {}살입니다.".format(23))
+print("나는 {},{}색을 좋아해요.".format("파랑","빨강"))
+#인덱스넘버로 순서 변경 가능
+print("나는 {0},{1}색을 좋아해요.".format("파랑","빨강"))
+print("나는 {1},{0}색을 좋아해요.".format("파랑","빨강"))
+
+#방법3
+print("나는 {age}살이고, {color}색을 좋아해요.".format(age = 20, color = "빨강"))
+print("나는 {age}살이고, {color}색을 좋아해요.".format(color = "파랑", age = 23))
+#변수 순서에 상관 없음
+
+#방법 4
+age = 20
+color = "보라"
+print(f"나는 {age}살이며, {color}색을 좋아해요.")
+#f로 시작하면 중괄호 안에 있는 값을 실제 변수 안에서 가져와 쓰는 것임
+
+#탈출문자
+print("백문이 불여일견 백견이 불여일타") #두 줄에 걸쳐서 나타내고 싶을 때
+
+#\n: 줄바꿈
+print("백문이 불여일견\n백견이 불여일타")
+
+#\": " 혹은 '를 문자로 쓰고 싶을 때
+print('"김동현"')
+print("저는 \"김동현\"입니다.")
+print("저는 \'김동현\'입니다.")
+
+#\\ : 문장 내에서 하나의 \로 출력
+print("\\usr\\local\\bin\\python3")
+
+#r : 커서를 맨 앞으로 이동하여 덮어쓰기
+print("red apple\rpine")
+#b : 백스페이스 (한 글자 삭제)
+print("redd\b apple")
+# \t : 탭 (문장 띄우기)
+print("red\tapple")
