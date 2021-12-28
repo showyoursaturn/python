@@ -1,0 +1,12 @@
+#자료구조의 변경
+menu = {"김치" ,"깍두기","열무"}
+print(menu, type(menu))
+
+menu = list(menu)
+print(menu, type(menu))
+
+menu = tuple(menu)
+print(menu, type(menu))
+
+menu = set(menu)
+print(menu, type(menu))
