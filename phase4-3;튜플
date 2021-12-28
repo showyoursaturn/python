@@ -1,0 +1,44 @@
+#튜플: 자료의 변경이 없음  
+
+artist = ("지코","딘")
+print(artist[0])
+print(artist[1])
+ 
+#artist.add("페노메코") ->불가능 (튜플은 자료의 추가,삭제 등의 변경 ㄴㄴ)
+
+name = "우지호"
+age = 30
+hobby = "rap"
+print(name, age, hobby)
+
+(name, age, hobby) = ("김동욱", "30" ,"랩")
+print(name, age, hobby)
+
+#set (집합)
+#중복 안됨, 순서 없음
+my_set = {1,2,3,3,3} #중복 자동 제거
+print(my_set)
+
+fanxy = {"지코", "페노메코", "딘"}
+child = set(["페노메코","스테이튠", "크러쉬"])
+
+#순서는 보장 안됨
+#교집합 (fanxy와 child 모두)
+print(fanxy & child) 
+print(fanxy.intersection(child))
+
+#합집합
+print(fanxy | child)
+print(fanxy.union(child))
+
+#차집합 (fanxy는 맞지만 child는 아닌)
+print(fanxy-child)
+print(fanxy.difference(child))
+
+#fanxy한 사람이 늘어남
+fanxy.add("아우릴고트")
+print(fanxy)
+
+#fanxy 탈퇴
+fanxy.remove("페노메코")
+print(fanxy)
