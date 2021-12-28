@@ -1,0 +1,42 @@
+#사전
+#자료형 = {키:value}
+
+cabinet = {3: "김동현", 100:"최훈교"}
+
+#출력시(값을 가져오는 법) - 자료형[value]
+print(cabinet[3])
+print(cabinet[100])
+
+print(cabinet.get(3))
+#차이 = []일때 없는 값을 넣었을 경우에는 오류, ()일 때는 None
+
+#값이 있으면 해당 키 내용 출력, 없으면 ','뒤 값 출력 (5라는 자료를 쓸 수 있는가)
+print(cabinet.get(5,"사용 가능"))
+
+#어떤 키의 여부를 확인
+print(3 in cabinet)
+print(5 in cabinet)
+
+#키를 문자열로도 줄 수 있음
+cabinet = {"instagram" : "일론머스크", "tesla" : "마크 주커버그"}
+print(cabinet["instagram"])
+
+#새 키
+print(cabinet)
+cabinet["instagram"] = "마크 주커버그"
+cabinet["tesla"] = "일론 머스크"
+print(cabinet)
+
+#키 값 지우기
+del cabinet["instagram"]
+print(cabinet)
+
+#키 들만 출력
+print(cabinet.keys())
+#value만 출력
+# print(cabinet.values(0))
+# print(cabinet.items())
+
+#모든 값 지우기
+cabinet.clear()
+print(cabinet)
