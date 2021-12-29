@@ -1,0 +1,72 @@
+# w = input("오늘 날씨는 어때요 ? :")
+# if w == "비" or "눈":
+#     print("우산을 챙기세요.")
+# elif w == "미세먼지":
+#     print("마스크를 챙기세요.")
+# else:
+#     print("날씨가 맑으니 즐기세요.")
+
+# t = int(input("기온은 어떤가요 ? :"))
+# if 30 <= t : 
+#     print("더우니 건강에 유의하세요.")
+# elif 10<=t and t<30 : 
+#     print("괜찮은 날씨입니다!") 
+# elif 0<=t and t<10 : 
+#     print("외투를 챙겨주세요.")
+# else :
+#     print("추우니 건강에 유의하세요.")
+
+# # print("대기번호 : 1")
+# for wait_no in range(1,6) : 
+#     print("대기번호 : {0}".format(wait_no))
+
+# st = ["김","이","박"]
+# for customer in st : 
+#     print("{0}씨,커피가 준비되었습니다.".format(customer))
+
+#while
+# ct = "김"
+# index = 5
+# while index >=1:
+#     print("{0}, 커피가 준비 되었습니다. {1}번 남았어요.".format(ct,index))
+#     index-=1
+#     if index == 0:
+#         print("커피는 폐기처분되었습니다.")
+
+# ct = "이"
+# while True :
+#     print("{0}, 커피가 준비 되었습니다. 호출 {1}회".format(ct, index))
+    
+# customer = "박"
+# person = "unknown"
+
+# while person != customer:
+#     print("{0}, 커피가 준비 되었습니다.".format(customer))
+#     person = input("이름이 어떻게 되세요? : ")
+
+ab = [2,5] #결석
+f = [7] #책이 없음
+for st in range(1,11) :
+        if st in ab : 
+            continue
+        elif st in f :
+            print("{0}은 교무실로 오고, 오늘 수업은 여기까지.".format(st))
+            break
+        print("{0}, 책을 읽어보렴".format(st))
+
+
+#출석번호가 1 2 3 4, 앞에 100을 붙이기로 함
+sts = range(1,6)
+sts = [i+100 for i in sts]
+print(sts)
+
+#학생 이름을 길이로 변환
+sts = ["김", "김나박이", "박박이"]
+sts = [len(i) for i in sts]
+print(sts)
+
+#학생이름을 대문자로 환
+sts = ["apple","facebook","instagram"]
+sts = [i.upper() for i in sts]
+print(sts)
+ 
